@@ -30,7 +30,7 @@ PYDART2_ODE_FOUND = \
 print("PYDART2_ODE_FOUND = %s" % PYDART2_ODE_FOUND)
 print("------------------------")
 
-CXX_FLAGS = '-Wall -msse2 -fPIC -std=c++11 -Xlinker -rpath /usr/local/lib '
+CXX_FLAGS = '-Wall -msse2 -fPIC -std=c++14 -Xlinker -rpath /usr/local/lib '
 CXX_FLAGS += '-O3 -DNDEBUG -shared '
 CXX_FLAGS += '-g -fno-omit-frame-pointer -fno-inline-functions '
 CXX_FLAGS += '-fno-optimize-sibling-calls '
@@ -43,7 +43,7 @@ if PYDART2_ODE_FOUND:
 
 print("CXX_FLAGS: %s" % str(CXX_FLAGS))
 
-# CXX_FLAGS = '-fopenmp -Wall -Wextra -fPIC -std=c++11 '
+# CXX_FLAGS = '-fopenmp -Wall -Wextra -fPIC -std=c++14 '
 # CXX_FLAGS = '-O3 -DNDEBUG'
 
 # CXX_FLAGS += '-fno-stack-protector '
